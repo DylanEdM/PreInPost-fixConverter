@@ -1,7 +1,12 @@
-import java.util.Scanner;
-import InfixTools.*;
-import PrefixTools.*;
-import PostfixTools.*;
+import InfixTools.InfixToPostfix;
+import InfixTools.InfixToPrefix;
+import InfixTools.InfixValidation;
+import PostfixTools.PostfixToInfix;
+import PostfixTools.PostfixToPrefix;
+import PostfixTools.PostfixValidation;
+import PrefixTools.PrefixToInfix;
+import PrefixTools.PrefixToPostfix;
+import PrefixTools.PrefixValidation;
 
 void main() {
     Scanner scanner = new Scanner(System.in);
