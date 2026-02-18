@@ -7,7 +7,7 @@ import PostfixTools.PostfixValidation;
 import PrefixTools.PrefixToInfix;
 import PrefixTools.PrefixToPostfix;
 import PrefixTools.PrefixValidation;
-
+//make some comments here about something or another.
 void main() {
     Scanner scanner = new Scanner(System.in);
     InfixValidation infixValidator = new InfixValidation();
@@ -28,13 +28,19 @@ void main() {
         switch (choice) {
             case "a":
                 valid = infixValidator.infixValidation(exp);
-                if (!valid) {System.out.println("Expression not valid");}
+                if (!valid) {
+                    System.out.println("Expression not valid");
+                }
             case "b":
                 valid = prefixValidator.prefixValidation(exp);
-                if (!valid) {System.out.println("Expression not valid");}
+                if (!valid) {
+                    System.out.println("Expression not valid");
+                }
             case "c":
                 valid = postfixValidator.postfixValidation(exp);
-                if (!valid) {System.out.println("Expression not valid");}
+                if (!valid) {
+                    System.out.println("Expression not valid");
+                }
         }
     }
     System.out.println("Select output expression:\nA) Infix\nB) Prefix\nC) Postfix");
@@ -45,7 +51,7 @@ void main() {
         choice = choice.charAt(0) + scanner.nextLine().strip().toLowerCase();
     }
     switch (choice) {
-        case "aa","bb","cc":
+        case "aa", "bb", "cc":
             System.out.println(exp);
             break;
         case "ab":
